@@ -8,7 +8,7 @@ function average(x, y) {
 
 function sqrt(x) {
     const goodEnough = (guess, x) => {
-        return Math.abs(square(guess), x);
+        return Math.abs(square(guess)- x);
     }
 
     const improve = (guess, x) => {
@@ -21,7 +21,7 @@ function sqrt(x) {
         } else {
             sqrtIter(improve(guess, x), x);
         }
-        
+
     }
     sqrtIter(1.0, x);
 }
