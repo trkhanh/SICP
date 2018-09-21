@@ -30,6 +30,7 @@ function average(x, y) {
 
 //Apply lexical scope
 function sqrt(x) {
+    console.log(x);
     const goodEnough = (guess) => {
         return Math.abs(square(guess) - x) < 0.001;
     }
@@ -50,3 +51,5 @@ function sqrt(x) {
 }
 
 console.log(sqrt(9))
+
+
