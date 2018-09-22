@@ -65,34 +65,4 @@ function factorial_version3(n) {
     return iter(1, 1);
 }
 
-console.log(factorial_version3(6))
-
-
-function square(x) {
-    return x * x;
-}
-
-function average(x, y) {
-    return (x + y) / 2;
-}
-
-function sqrt(x) {
-    function goodEnough(guess, x) {
-        return Math.abs(square(guess), x);
-    }
-
-    function improve(guess, x) {
-        return average(guess, (x / guess));
-    }
-
-    function sqrtIter(guess, x) {
-        if (goodEnough(guess, x)) {
-            return guess;
-        } else {
-            sqrtIter(improve(guess, x), x);
-        }
-        sqrtIter(1.0, x);
-    }
-}
-
-console.log(sqrt(9))
+console.log(factorial_version3(6));
